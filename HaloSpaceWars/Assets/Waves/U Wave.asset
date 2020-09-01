@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 36254849698464044b985d3ee5c71d42, type: 3}
-  m_Name: New Wave Config
+  m_Name: U Wave
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 3913247546159562802, guid: 14c670717baebc648a86799858108267,
     type: 3}

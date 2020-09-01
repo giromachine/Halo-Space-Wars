@@ -6,7 +6,6 @@ public class EnemyPath : MonoBehaviour
 {
     [SerializeField] WaveConfig waveConfig;
     List<Transform> waypoints;
-    [SerializeField] float moveSpeed = 2f;
     int waypointIndex = 0;
 
     void Start()
@@ -21,12 +20,17 @@ public class EnemyPath : MonoBehaviour
         Movement();
     }
 
+    public void SetWaveConfig(WaveConfig waveConfig)
+    {
+        this.waveConfig = waveConfig;
+    }
+
     private void Movement()
     {
         if (waypointIndex <= waypoints.Count - 1)
         {
             var targetPos = waypoints[waypointIndex].transform.position;
-            var movementFrame = moveSpeed * Time.deltaTime;
+            var movementFrame = waveConfig.GetMoveSpeed() * Time.deltaTime;
             transform.position = Vector2.MoveTowards(transform.position, targetPos, movementFrame);
 
             if (transform.position == targetPos)
