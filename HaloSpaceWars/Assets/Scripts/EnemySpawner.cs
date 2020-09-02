@@ -6,14 +6,23 @@ public class EnemySpawner : MonoBehaviour
 {
 
     [SerializeField] List<WaveConfig> waveConfigs;
-    int startingWave = 0;
+    [SerializeField] int startingWave = 0;
+
     Vector3 BansheeView = new Vector3(0, 0, 180f);
 
     // Start is called before the first frame update
     void Start()
     {
-        var currentWave = waveConfigs[startingWave];
-        StartCoroutine(SpawnAllEnemiesInWave(currentWave));
+        
+        StartCoroutine(AllWaves());
+    }
+    private IEnumerator AllWaves()
+    {
+        for (int index = startingWave; index < waveConfigs.Count; index++)
+        {
+            var currentWave = waveConfigs[index];
+            yield return StartCoroutine(SpawnAllEnemiesInWave(currentWave));
+        }
     }
 
     private IEnumerator SpawnAllEnemiesInWave(WaveConfig waveConfig)
