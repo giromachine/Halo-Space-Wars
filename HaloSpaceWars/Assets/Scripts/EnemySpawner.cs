@@ -7,14 +7,17 @@ public class EnemySpawner : MonoBehaviour
 
     [SerializeField] List<WaveConfig> waveConfigs;
     [SerializeField] int startingWave = 0;
+    [SerializeField] bool looping = false;
 
     Vector3 BansheeView = new Vector3(0, 0, 180f);
 
     // Start is called before the first frame update
-    void Start()
+    IEnumerator Start()
     {
-        
-        StartCoroutine(AllWaves());
+        do
+        {
+            yield return StartCoroutine(AllWaves());
+        } while (looping);
     }
     private IEnumerator AllWaves()
     {

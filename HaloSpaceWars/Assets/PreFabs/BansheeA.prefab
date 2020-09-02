@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2893878105974913180
+--- !u!1 &3789263170013007759
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,38 +8,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2893878105974913177}
-  - component: {fileID: 2893878105974913178}
-  - component: {fileID: 2893878105974913179}
-  - component: {fileID: 6080573499081631220}
-  m_Layer: 0
-  m_Name: Player
+  - component: {fileID: 4299943348188481302}
+  - component: {fileID: 7661133315497811482}
+  - component: {fileID: 3414202069375131900}
+  - component: {fileID: 4933445884960358010}
+  - component: {fileID: 2966117300174959868}
+  m_Layer: 9
+  m_Name: BansheeA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2893878105974913177
+--- !u!4 &4299943348188481302
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2893878105974913180}
+  m_GameObject: {fileID: 3789263170013007759}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.09, y: -5.71, z: 0}
+  m_LocalPosition: {x: -0.8010218, y: -0.22219634, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &2893878105974913178
+--- !u!212 &7661133315497811482
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2893878105974913180}
+  m_GameObject: {fileID: 3789263170013007759}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: de0e786db7757944d987e136e825f9fa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a8200a683288c3e4ba430e4d1d7fe6ff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -84,48 +85,61 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2893878105974913179
+--- !u!114 &3414202069375131900
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2893878105974913180}
+  m_GameObject: {fileID: 3789263170013007759}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a963b3bc85272484ea8bcd8a41593063, type: 3}
+  m_Script: {fileID: 11500000, guid: 6491a6851d201034cbb428e3139fb0e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
-  padding: 0
-  health: 200
-  laserSpeed: 30
-  laserPeriod: 0.2
-  laserPrefab: {fileID: 8497027862110621974, guid: 6fdc9b56f0e65f740a44da9dbfe9329b,
-    type: 3}
---- !u!61 &6080573499081631220
+  waveConfig: {fileID: 0}
+--- !u!61 &4933445884960358010
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2893878105974913180}
+  m_GameObject: {fileID: 3789263170013007759}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.095651925}
+  m_Offset: {x: -0.000000029802322, y: -0.025196254}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.28, y: 1.28}
+    oldSize: {x: 0.9142857, y: 0.9142857}
     newSize: {x: 1.28, y: 1.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.28, y: 1.0886961}
+  m_Size: {x: 0.87766236, y: 0.68064797}
   m_EdgeRadius: 0
+--- !u!114 &2966117300174959868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3789263170013007759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d5a1946f016c2c4384dfa8d2233ad01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  shotCounter: 0
+  minTimeBShots: 0.8
+  maxTimeBShots: 3
+  projectile: {fileID: 2488883534325840563, guid: 3ab7db1c2c3a3d6439fab2c702fec202,
+    type: 3}
+  projectileSpeed: 10
