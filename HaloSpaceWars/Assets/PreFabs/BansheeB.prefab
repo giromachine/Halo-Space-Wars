@@ -146,3 +146,7 @@ MonoBehaviour:
   deathVFX: {fileID: 8069084335947761118, guid: 0bc2c289d4f368f459be6210710e7d76,
     type: 3}
   VFXduration: 1
+  deathSFX: {fileID: 8300000, guid: ad83c93e413dbca429f22d5d914d596a, type: 3}
+  deathVolume: 0.16
+  shootSFX: {fileID: 8300000, guid: 7b2dd10067f36a84ca1dbb7f1f4d6b4a, type: 3}
+  shootVolume: 0.111

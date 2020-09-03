@@ -103,6 +103,13 @@ MonoBehaviour:
   laserPeriod: 0.1
   laserPrefab: {fileID: 8497027862110621974, guid: 6fdc9b56f0e65f740a44da9dbfe9329b,
     type: 3}
+  deathVFX: {fileID: 8069084335947761118, guid: 05fcf466a3808e6418ac15e99228da43,
+    type: 3}
+  VFXduration: 1
+  deathSFX: {fileID: 8300000, guid: 513fd3e4f7382964d81e15e8e5d6a966, type: 3}
+  deathVolume: 0.409
+  shootSFX: {fileID: 8300000, guid: 1822ed4d1c8a2624e8416ac0c44bdd65, type: 3}
+  shootVolume: 0.181
 --- !u!61 &6080573499081631220
 BoxCollider2D:
   m_ObjectHideFlags: 0
