@@ -100,7 +100,7 @@ MonoBehaviour:
   padding: 0
   health: 200
   laserSpeed: 30
-  laserPeriod: 0.2
+  laserPeriod: 0.1
   laserPrefab: {fileID: 8497027862110621974, guid: 6fdc9b56f0e65f740a44da9dbfe9329b,
     type: 3}
 --- !u!61 &6080573499081631220

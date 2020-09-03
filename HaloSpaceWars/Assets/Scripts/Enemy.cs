@@ -11,6 +11,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] float maxTimeBShots = 3f;
     [SerializeField] GameObject projectile;
     [SerializeField] float projectileSpeed = 1f;
+    [SerializeField] GameObject deathVFX;
+    [SerializeField] float VFXduration = 1f;
 
     Vector3 ProjView = new Vector3(0, 0, 180f);
 
@@ -57,7 +59,14 @@ public class Enemy : MonoBehaviour
         damageDealer.Hit();
         if (health <= 0)
         {
-            Destroy(gameObject);
+            Death();
         }
+    }
+
+    private void Death()
+    {
+        Destroy(gameObject);
+        GameObject explosion = Instantiate(deathVFX, transform.position, transform.rotation);
+        Destroy(explosion, VFXduration);
     }
 }
