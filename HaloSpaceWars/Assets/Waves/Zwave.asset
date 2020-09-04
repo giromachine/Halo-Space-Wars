@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36254849698464044b985d3ee5c71d42, type: 3}
+  m_Name: Zwave
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 8259505095072172220, guid: 14c670717baebc648a86799858108267,
+    type: 3}
+  pathPrefab: {fileID: 3300540909731437680, guid: 6299a6f0b366ec74ebdde223ff84f293,
+    type: 3}
+  timeBetweenSpawns: 0.8
+  spawnRandom: 0.3
+  numberOfEnemies: 6
+  moveSpeed: 6
