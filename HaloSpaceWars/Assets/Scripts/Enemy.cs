@@ -6,7 +6,8 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [Header("Enemy data")]
-    [SerializeField] float health = 100;
+    [SerializeField] int health = 100;
+    [SerializeField] int pointMultiplier = 1;
     [SerializeField] float shotCounter;
     [SerializeField] float minTimeBShots = 0.2f;
     [SerializeField] float maxTimeBShots = 3f;
@@ -24,6 +25,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] [Range(0, 1)] float shootVolume = 0.7f;
 
     Vector3 ProjView = new Vector3(0, 0, 180f);
+
+    
 
     // Start is called before the first frame update
     void Start()
@@ -78,6 +81,7 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
         GameObject explosion = Instantiate(deathVFX, transform.position, transform.rotation);
         Destroy(explosion, VFXduration);
+        FindObjectOfType<GameState>().AddScore(pointMultiplier);
         AudioSource.PlayClipAtPoint(deathSFX, Camera.main.transform.position, deathVolume);
     }
 }

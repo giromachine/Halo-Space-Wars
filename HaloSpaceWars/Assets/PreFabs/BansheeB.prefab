@@ -139,6 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 500
+  pointMultiplier: 3
   shotCounter: 0
   minTimeBShots: 0.2
   maxTimeBShots: 3

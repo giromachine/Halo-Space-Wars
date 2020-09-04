@@ -111,4 +111,8 @@ public class Player : MonoBehaviour
         yMax = gameCamera.ViewportToWorldPoint(new Vector3(0, 0.33f, 0)).y - padding;
     }
 
+    public int GetHealth()
+    {
+        return health;
+    }
 }

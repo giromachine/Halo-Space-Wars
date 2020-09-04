@@ -14,6 +14,11 @@ public class LevelManager : MonoBehaviour
     {
         SceneManager.LoadScene("Game");
     }
+    public void LoadAgainGame()
+    {
+        FindObjectOfType<GameState>().DestroyGameStatus();
+        SceneManager.LoadScene("Game");
+    }
     public void LoadGameOver()
     {
         StartCoroutine(SceneDelay());
